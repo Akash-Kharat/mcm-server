@@ -25,5 +25,5 @@ app.get("/exit", (req, res) => {
   process.exit(0);
 });
 app.listen(PORT, () => {
-  console.log(`Server running at http://192.168.0.54:${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
