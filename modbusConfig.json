@@ -1,0 +1,8 @@
+{
+  "path": "COM6",
+  "baudRate": 9600,
+  "holdingRegisterStart": 0,
+  "holdingRegisterEnd": 24,
+  "deviceIdStart": 3,
+  "deviceIdEnd": 3
+}
