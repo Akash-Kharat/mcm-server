@@ -19,10 +19,8 @@ app.use(
 app.use(morgan("tiny"));
 app.use("/api/v1/device", deviceRoutes);
 app.use("/api/v1/group", groupRoutes);
-app.get("/exit", (req, res) => {
-  flags.isConnected = false;
-  res.status(200).json({ success: true, message: "Server stopped!" });
-  process.exit(0);
+app.get("/", (req, res) => {
+  res.send("Server connected!");
 });
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
